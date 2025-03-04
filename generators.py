@@ -26,20 +26,3 @@ def countdown(n):
     for i in range(n, -1, -1):
         yield i
 
-if __name__ == "__main__":
-    N = 10
-    print("Squares up to N:", list(square_generator(N)))
-    
-    n = int(input("Enter n for even numbers: "))
-    print("Even numbers:", ", ".join(map(str, even_numbers(n))))
-    
-    n = int(input("Enter n for numbers divisible by 3 and 4: "))
-    print("Divisible by 3 and 4:", list(divisible_by_3_and_4(n)))
-    
-    a, b = 1, 5
-    print("Squares from a to b:")
-    for num in squares(a, b):
-        print(num)
-    
-    n = int(input("Enter n for countdown: "))
-    print("Countdown:", list(countdown(n)))
