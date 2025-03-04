@@ -41,14 +41,3 @@ def space_out_capitals(text):
 def camel_to_snake(text):
     return re.sub(r'(?<!^)(?=[A-Z])', '_', text).lower()
 
-if __name__ == "__main__":
-    print("Pattern 1 (a followed by any b's):", check_pattern1("abb"))
-    print("Pattern 2 (a followed by 2 or 3 b's):", check_pattern2("abb"))
-    print("Find words with underscores:", find_underscore_words("hello_world test_example"))
-    print("Find camel case words:", find_camelcase_words("Hello World Test"))
-    print("Check if starts with 'a' and ends with 'b':", check_start_end("axb"))
-    print("Replace spaces, commas, and dots:", replace_special_chars("Hello, world. Welcome"))
-    print("Convert snake_case to camelCase:", snake_to_camel("this_is_a_test"))
-    print("Split at uppercase letters:", split_at_uppercase("ExampleStringToTest"))
-    print("Insert spaces in capitalized text:", space_out_capitals("ExampleStringToTest"))
-    print("Convert camelCase to snake_case:", camel_to_snake("ThisIsATest"))
