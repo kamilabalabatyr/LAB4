@@ -20,16 +20,3 @@ def drop_microseconds():
 def date_difference_in_seconds(date1, date2):
     return abs((date2 - date1).total_seconds())
 
-if __name__ == "__main__":
-    print("Five days ago:", subtract_five_days())
-    
-    yesterday, today, tomorrow = get_dates()
-    print("Yesterday:", yesterday)
-    print("Today:", today)
-    print("Tomorrow:", tomorrow)
-    
-    print("Current datetime without microseconds:", drop_microseconds())
-    
-    date1 = datetime(2024, 2, 10, 12, 0, 0)  # Example date 1
-    date2 = datetime(2024, 2, 14, 12, 0, 0)  # Example date 2
-    print("Difference in seconds:", date_difference_in_seconds(date1, date2))
